@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kmpineda504/jobno-one-assignment.git/static/css/main.e6c13ad2.css",
+    "main.js": "/kmpineda504/jobno-one-assignment.git/static/js/main.af3f085c.js",
+    "static/js/787.6fdc476a.chunk.js": "/kmpineda504/jobno-one-assignment.git/static/js/787.6fdc476a.chunk.js",
+    "index.html": "/kmpineda504/jobno-one-assignment.git/index.html",
+    "main.e6c13ad2.css.map": "/kmpineda504/jobno-one-assignment.git/static/css/main.e6c13ad2.css.map",
+    "main.af3f085c.js.map": "/kmpineda504/jobno-one-assignment.git/static/js/main.af3f085c.js.map",
+    "787.6fdc476a.chunk.js.map": "/kmpineda504/jobno-one-assignment.git/static/js/787.6fdc476a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.af3f085c.js"
+  ]
+}
