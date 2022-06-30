@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Input = ({ todos, setTodos, inputText, setInputText }) => {
     const inputTextHandler = (e) =>{
@@ -9,15 +9,22 @@ const Input = ({ todos, setTodos, inputText, setInputText }) => {
     const submitTodoHandler = (e) => {
         e.preventDefault();
         setTodos([
-            ...todos, {text: inputText, completed:false, id: Math.random() * 1000}
-        ])
+            ...todos, {id: Math.random() * 10, text: inputText, completed:false, }
+        ]);
+        setInputText('');
     }
 
     return (
-        <div>
-            <input onChange={inputTextHandler} className='todo-input' type="text" />
-            <button onClick={submitTodoHandler} className='btn' type='submit'>Add</button>
-        </div>
+        <>
+            <input 
+                onChange={inputTextHandler} 
+                className='todo-input' 
+                type="text" 
+                value={inputText}
+                placeholder="Input to-do's here"
+                />
+            <button onClick={submitTodoHandler} className='btn btn-primary' type='submit'>Add</button>
+        </>
     )
 }
 
