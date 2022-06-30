@@ -5,14 +5,12 @@
   }
   
   body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.6;
+    margin: 0; 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   }
     
   .container {

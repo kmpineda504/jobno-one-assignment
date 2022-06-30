@@ -9,4 +9,21 @@
   margin-bottom: 20px;
 }
 
+.todo-container{
 
+  ul{
+    list-style-type: none;
+    width: 100%;
+  }
+  li{
+    align-items: center ;
+    display: flex;
+    justify-content: space-around;
+    margin: 2.5px 0;
+  }
+}
+
+.todo-item{
+  @extend .todo-container;
+  min-width: 80%;
+}

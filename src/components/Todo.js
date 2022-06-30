@@ -5,9 +5,11 @@ import { FaCheck } from 'react-icons/fa';
 const Todo = () => {
   return (
     <>
-        <li className='todo-item'>HOLA</li>
-        <button className='btn btn-secondary'><FaCheck/></button>
-        <button className='btn btn-secondary'><FaTimes/></button>
+        <li>
+            <p className='todo-item'>HEY</p>
+            <button className='btn btn-secondary btn-check'><FaCheck/></button>
+            <button className='btn btn-secondary btn-delete'><FaTimes/></button>
+        </li>
     </>
   )
 }

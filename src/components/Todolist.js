@@ -3,11 +3,13 @@ import Todo from './Todo';
 
 const Todolist = () => {
   return (
-    <div className='todo-container'>
-        <ul className='todo-list'>
+    <section className='todo-container'>
+        <ul >
+            <Todo />
+            <Todo />
             <Todo />
         </ul>
-    </div>
+    </section>
   )
 }
 

@@ -8,7 +8,7 @@
     text-decoration: none;
 
     &:hover{
-        transform: scale(0.98);
+        transform: scale(1.05);
     }
 }
 .btn-primary {
@@ -21,8 +21,18 @@
 
 .btn-secondary{
     @extend %btn;
-    border: 1px solid $base-color;
-    color: $base-color;
     margin: 2px;
     padding: 5px 10px 1px 10px;
+}
+
+.btn-check{
+    @extend .btn-secondary;
+    border: 1px solid $check-color;
+    color: $check-color;
+}
+
+.btn-delete{
+    @extend .btn-secondary;
+    border: 1px solid $delete-color;
+    color: $delete-color;
 }
