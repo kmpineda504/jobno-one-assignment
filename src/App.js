@@ -1,8 +1,18 @@
+import React from "react";
+import Header from "./components/Header";
+import Form from "./components/Form";
+import Todolist from "./components/Todolist";
+
 
 function App() {
+  // const [inputText, setInputText] = useState("");
+  // const [todos, setTodos] = useState([]);
+
   return (
-    <div className="App">
-      <h1>Lorem ipsum dolor sit amet.</h1>
+    <div className="container">
+      <Header /> 
+      <Form />
+      <Todolist />
     </div>
   );
 }
