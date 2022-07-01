@@ -6,7 +6,7 @@ const Todolist = ({ todos }) => {
         <section className='todo-container'>
             <ul >
                 {todos.map(todo => (
-                    <Todo text={todo.text}/>     
+                    <Todo key={todo.id} text={todo.text}/>     
                 ))}
             </ul>
         </section>

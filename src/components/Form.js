@@ -25,8 +25,6 @@ const Form = () => {
             </form>
             <Todolist todos={todos} />
         </>
-        
-        
     )
 }
 
