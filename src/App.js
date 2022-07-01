@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Form from "./components/Form";
-import Todolist from "./components/Todolist";
+
 
 
 function App() {
@@ -12,7 +12,6 @@ function App() {
     <div className="container">
       <Header /> 
       <Form />
-      <Todolist />
     </div>
   );
 }

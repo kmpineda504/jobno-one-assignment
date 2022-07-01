@@ -17,8 +17,7 @@ const Input = ({ todos, setTodos, inputText, setInputText }) => {
     return (
         <>
             <input 
-                onChange={inputTextHandler} 
-                className='todo-input' 
+                onChange={inputTextHandler}  
                 type="text" 
                 value={inputText}
                 placeholder="Input to-do's here"
