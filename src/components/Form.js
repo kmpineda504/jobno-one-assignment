@@ -23,7 +23,7 @@ const Form = () => {
                     <option value="uncompleted">Uncompleted</option>
                 </select>
             </form>
-            <Todolist todos={todos} />
+            <Todolist todos={todos} setTodos={setTodos}/>
         </>
     )
 }
