@@ -10,6 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   margin: 0;
+  font-size: 15px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -25,12 +26,11 @@ body {
 }
 
 .btn-secondary, .btn-delete, .btn-check, .btn-primary {
-  border-radius: 5px;
+  border-radius: 50px;
   border: none;
   cursor: pointer;
   display: inline-block;
   font-family: inherit;
-  font-size: 15px;
   text-decoration: none;
 }
 .btn-secondary:hover, .btn-delete:hover, .btn-check:hover, .btn-primary:hover {
@@ -40,7 +40,7 @@ body {
 .btn-primary {
   background: steelblue;
   color: white;
-  margin: 5px;
+  margin: 5px 0;
   padding: 10px 20px;
 }
 
@@ -57,6 +57,30 @@ body {
 .btn-delete {
   border: 1px solid #d9534f;
   color: #d9534f;
+}
+
+.select {
+  width: auto;
+  background-color: white;
+  border: 1px solid steelblue;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.input {
+  background-color: white;
+  border: 1px solid steelblue;
+  border-radius: 50px;
+  margin: 5px 0;
+  padding: 10px;
+  width: 50%;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
 
 .form {

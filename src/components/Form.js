@@ -1,12 +1,15 @@
 import React, {useState} from 'react';
 import Input from './Input';
+import Select from './Select';
 import Todolist from './Todolist';
 
 
 const Form = () => {
-
+    //State stuffs
     const [inputText, setInputText] = useState("");
     const [todos, setTodos] = useState ([]);
+    const [status, setStatus] = useState ("all");
+    const [filteredTodos, setfilteredTodos] = useState ([]);
 
     return (
         <>
@@ -15,15 +18,20 @@ const Form = () => {
                     inputText={inputText} 
                     setInputText={setInputText} 
                     todos={todos} 
-                    setTodos={setTodos} 
+                    setTodos={setTodos}
                 />
-                <select className='filter-todo' name="todos">
-                    <option value="all">All</option>
-                    <option value="completed">Completed</option>
-                    <option value="uncompleted">Uncompleted</option>
-                </select>
+
+                <Select 
+                    todos={todos} 
+                    filteredTodos={filteredTodos}
+                    setfilteredTodos={setfilteredTodos}
+                    status={status}
+                    setStatus={setStatus} 
+                />
+
             </form>
-            <Todolist todos={todos} setTodos={setTodos}/>
+
+            <Todolist todos={todos} setTodos={setTodos} filteredTodos={filteredTodos}/>
         </>
     )
 }

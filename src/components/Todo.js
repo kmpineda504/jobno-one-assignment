@@ -25,7 +25,7 @@ const Todo = ({ text, todo, todos, setTodos }) => {
     return (
       <>
           <li>
-              <p className='todo-item'>{text}</p>
+              <p className= {`todo-item ${todo.completed ? "completed" : ''}`}>{text}</p>
               <button onClick={completeHandler} className='btn btn-secondary btn-check'><FaCheck/></button>
               <button onClick={deleteHandler} className='btn btn-secondary btn-delete'><FaTrash/></button>
           </li>

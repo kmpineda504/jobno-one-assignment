@@ -1,6 +1,9 @@
-@import 'config';
-@import 'utilities';
-@import 'buttons';
+@import 'config', 'utilities', 'buttons', 'select', 'input';
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
 
 .form{
   display: flex;
@@ -26,3 +29,4 @@
   @extend .todo-container;
   min-width: 80%;
 }
+

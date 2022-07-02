@@ -9,7 +9,7 @@ const Input = ({ todos, setTodos, inputText, setInputText }) => {
     const submitTodoHandler = (e) => {
         e.preventDefault();
         setTodos([
-            ...todos, {id: Math.random() * 10, text: inputText, completed:false, }
+            ...todos, {id: Math.random() * 100, text: inputText, completed:false, }
         ]);
         setInputText('');
     }
@@ -21,7 +21,8 @@ const Input = ({ todos, setTodos, inputText, setInputText }) => {
                 type="text" 
                 value={inputText}
                 placeholder="Input to-do's here"
-                />
+                className='input'
+            />
             <button onClick={submitTodoHandler} className='btn btn-primary' type='submit'>Add</button>
         </>
     )
