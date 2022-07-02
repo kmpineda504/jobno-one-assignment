@@ -2,7 +2,6 @@ import React from 'react';
 
 const Input = ({ todos, setTodos, inputText, setInputText }) => {
     const inputTextHandler = (e) =>{
-        console.log(e.target.value);
         setInputText(e.target.value);
     }
 
